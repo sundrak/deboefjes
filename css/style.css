@@ -6,6 +6,14 @@
     --d-green: #6d9c00;
     --l-green:#7eb400; 
 }
+.dgreen {
+    background-color:var(--d-green);
+    
+}
+.lgreen {
+    background-color:var(--l-green);
+    
+}
 
 .back-to-top {
     position: fixed;
@@ -40,8 +48,8 @@
 /*MOD MOD MOD*/
 .btn.btn-primary {
     color: #FFFFFF;
-    background-color:#f7952a;
-    border-color: #f7952a;
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .btn-square {
@@ -124,6 +132,14 @@ h6,
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
+}
+.dropdown-item {
+    color: var(--light);
+    
+}
+.dropdown-item:hover {
+    background-color:var(--l-green);
+    color: var(--light);
 }
 
 .navbar .dropdown-toggle::after {
