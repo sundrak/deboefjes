@@ -3,6 +3,9 @@ https://github.com/microsoft/PowerToys/releases/tag/v0.69.0
 
 https://github.com/microsoft/PowerToys/releases/download/v0.69.0/PowerToysUserSetup-0.69.0-x64.exe
 
+---------------------
+css/style.css
+website specifiek
 ----------------------
 menu licht groen
 #7eb400
