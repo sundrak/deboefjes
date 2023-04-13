@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
     --primary: #f7952a;
-    --light: #FFF5F3;
+    --light: #fff;
     --dark: #103741;
     --d-green: #6d9c00;
     --l-green:#7eb400; 
@@ -14,18 +14,9 @@
     background-color:var(--l-green);
     
 }
-
-/* .nav-item:first-of-type {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    } */
-    
-    
-    
-/* .nav-item:last-of-type {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    } */
+.lgr-bg {
+    /* MOBILE SCREEN */
+    }
 
 .back-to-top {
     position: fixed;
@@ -62,6 +53,8 @@
     color: #FFFFFF;
     background-color: var(--primary);
     border-color: var(--primary);
+    
+    
 }
 
 .btn-square {
@@ -106,7 +99,7 @@ h4,
 .display-4,
 .display-5,
 .display-6 {
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 
@@ -125,7 +118,8 @@ h6,
 .callme {
     text-align: right; 
     color: var(--l-green);
-    padding-right:8%;
+    padding: 3%;
+    background-color: var(--light);
     
 }
 /*** Navbar ***/
@@ -133,6 +127,7 @@ h6,
     background-color:var(--l-green);
     border-radius: 15px 0px 0px 15px;
     padding-left: 12px;
+    transition: height 1.0s ease;
        
 }
 .endnav {
@@ -144,7 +139,7 @@ h6,
 .navbar .navbar-nav .nav-link {
     padding: 30px 15px;
     /*MOD MOD MOD*/
-    color: var(--light);
+    color: var(--light)!important;
     background-color: var(--l-green);
     font-weight: 500;
     outline: none;
@@ -153,22 +148,23 @@ h6,
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     /*MOD MOD MOD*/
-    color: var(--light);
-    background-color: var(--d-green);
+    color: var(--light)!important;
+    background-color:var(--d-green)!important;
     
 }
-
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
 }
+
 .dropdown-item {
-    color: var(--light);
+    color: var(--light)!important;
+    background-color:var(--d-green)!important;
     
 }
 .dropdown-item:hover {
-    background-color:var(--l-green);
-    color: var(--light);
+    color: var(--light)!important;
+    background-color:var(--l-green)!important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -187,35 +183,38 @@ h6,
     transform: rotate(-180deg);
 }
 
+/* ------MOBILE SCREEN----- */
 @media (max-width: 991.98px) {
     body {
         line-height: 1em;
     }
-    
-        
-    .navbar .navbar-nav .nav-link  {
+     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
-        padding: 10px 0;
-        background-color: #7eb400:!important;
-        
+        padding: 10px;
+                         
     }
     .navbar .navbar-nav {
         margin-left: 0px;
         margin-top: 15px;
         border-top: 0px solid; /*MOD MOD MOD*/
+      
     }
+    /* .lgr-bg {
+        background-color:var(--l-green);
+        height: 60px;
+        } */
+        
     .endnav{
-        visibility: hidden;
+        height: 20px;
+        border-radius: 0px 0px 15px 15px;
     } 
-    .beginnav {padding: 0px;
-                border-radius: 15px 15px 0px 0px;
+    .beginnav {
+        padding: 0px;
+        border-radius: 15px 15px 0px 0px;
     }
     .rounded-bottom {
         border-bottom-right-radius: 0px!important;
         border-bottom-left-radius: 0px!important;
-    }
-    .navbar-nav {
-        padding-left: 10px;
     }
 }
 
@@ -251,7 +250,7 @@ h6,
     height: 10px;
     top: 0;
     left: 0;
-    background: url(../img/bg-header-top.png) center center repeat-x;
+    /* background: url(../img/bg-header-top.png) center center repeat-x; */
     z-index: 1;
 }
 
@@ -260,7 +259,7 @@ h6,
     height: 19px;
     top: auto;
     bottom: 0;
-    background: url(../img/bg-header-bottom.png) center center repeat-x;
+    /* background: url(../img/bg-header-bottom.png) center center repeat-x; */
 }
 
 @media (max-width: 768px) {
