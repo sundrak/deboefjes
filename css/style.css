@@ -15,6 +15,18 @@
     
 }
 
+/* .nav-item:first-of-type {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    } */
+    
+    
+    
+/* .nav-item:last-of-type {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    } */
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -109,14 +121,31 @@ h6,
     font-family: 'Lobster Two', cursive;
 }
 
-
+/**phone number**/
+.callme {
+    text-align: right; 
+    color: var(--l-green);
+    padding-right:8%;
+    
+}
 /*** Navbar ***/
+.beginnav {
+    background-color:var(--l-green);
+    border-radius: 15px 0px 0px 15px;
+    padding-left: 12px;
+       
+}
+.endnav {
+    background-color:var(--l-green);
+    border-radius: 0px 15px 15px 0px;
+    padding-right: 12px;
+    height:5.5em
+}
 .navbar .navbar-nav .nav-link {
     padding: 30px 15px;
     /*MOD MOD MOD*/
     color: var(--light);
     background-color: var(--l-green);
-    
     font-weight: 500;
     outline: none;
 }
@@ -152,26 +181,46 @@ h6,
     transition: .5s;
     /*MOD MOD MOD*/
     color: var(--d-green);
-}
-
+    }
+   
 .navbar .dropdown-toggle[aria-expanded=true]::after {
     transform: rotate(-180deg);
 }
 
 @media (max-width: 991.98px) {
+    body {
+        line-height: 1em;
+    }
+    
+        
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
+        background-color: #7eb400:!important;
         
     }
-
     .navbar .navbar-nav {
+        margin-left: 0px;
         margin-top: 15px;
-        border-top: 1px solid #EEEEEE;
+        border-top: 0px solid; /*MOD MOD MOD*/
+    }
+    .endnav{
+        visibility: hidden;
+    } 
+    .beginnav {padding: 0px;
+                border-radius: 15px 15px 0px 0px;
+    }
+    .rounded-bottom {
+        border-bottom-right-radius: 0px!important;
+        border-bottom-left-radius: 0px!important;
+    }
+    .navbar-nav {
+        padding-left: 10px;
     }
 }
 
 @media (min-width: 992px) {
+
     .navbar .nav-item .dropdown-menu {
         display: block;
         top: calc(100% - 15px);
