@@ -3,6 +3,9 @@ https://github.com/microsoft/PowerToys/releases/tag/v0.69.0
 
 https://github.com/microsoft/PowerToys/releases/download/v0.69.0/PowerToysUserSetup-0.69.0-x64.exe
 
+
+https://kcdeboefjes.nl/
+https://getbootstrap.com/docs/5.2/components/carousel/
 ----------------------
 menu licht groen
 #7eb400
