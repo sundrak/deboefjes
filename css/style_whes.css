@@ -2,7 +2,7 @@
 :root {
     --primary: #f7952a;
     --light: #fff;
-    --dark: #ed8009;
+    --dark: #103741;
     --d-green: #6d9c00;
     --l-green:#7eb400; 
 }
@@ -14,9 +14,10 @@
     background-color:var(--l-green);
     
 }
-.lgreen_text {
-    color:var(--l-green);
-}
+.lgr-bg {
+    /* MOBILE SCREEN */
+    }
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -46,16 +47,15 @@
     font-weight: 500;
     transition: .5s;
 }
+
+/*MOD MOD MOD*/
 .btn.btn-primary {
     color: #FFFFFF;
     background-color: var(--primary);
     border-color: var(--primary);
+    
+    
 }
-.btn.btn-primary:hover {
-    background-color: var(--dark);
-    border-color: var(--dark);
-}
-
 
 .btn-square {
     width: 38px;
@@ -326,247 +326,6 @@ h6,
     color: rgba(255, 255, 255, .5);
 }
 
-.media-object {
-    display: flex;
-}
-
-.media-object img{
-    padding-right: 20px;
-}
-
-.lead {
-    color: var(--l-green);
-    font-weight: bold;
-    padding: 50px 0px;
-}
-
-.voordelen {
-    padding-bottom: 100px;
-}
-
-.voordelen h4 {
-    font-size: 1.1em;
-    color:var(--l-green);
-    font-family: 'Poppins', sans-serif;
-}
-
-.extraInformatie {
-    background-color: var(--l-green);
-    text-align: center;
-    justify-content: center;
-    top: -18px;
-    left: -100px;
-    bottom: -18px;
-    right: -100px;
-    transform: rotate(-1.2deg);
-    padding-bottom: 100px;
-}
-
-.extraInformatie h2{
-    color: #FFFFFF;
-    padding: 100px 0px 25px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.3em;
-}
-
-.extraInformatie h3{
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 0px;
-}
-
-.card {
-    padding: 10px;
-    border-radius: 0px;
-}
-
-.cardImage {
-    overflow: hidden;
-}
-
-.card:hover img{
-    transform: scale(1.05);
-    z-index: 1;
-}
-
-.card img{
-    transition: all 0.25s ease;
-}
-
-.cardImage img {
-    height: auto;
-    width: 100%;
-    max-width: 265px;
-}
-
-@media (max-width: 580px) {
-    .card {
-        margin: 1.3em 2em 2em 2em;
-    }
-}
-
-.bezichtiging {
-    text-align: center;
-    justify-content: center;
-    top: -18px;
-    left: -100px;
-    bottom: -18px;
-    right: -100px;
-    transform: rotate(-1.2deg);
-    padding: 100px 0px;
-}
-
-.bezichtigingTekst h2, .bezichtigingTekst p{
-    color: #FFFFFF;
-}
-
-.bezichtigingTekst h2 {
-    font-size: 2.3em;
-    font-family: 'Poppins', sans-serif;
-}
-
-.bezichtigingTekst p {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 1.5em;
-}
-
-.bezichtigingTekst a {
-    font-size: 1.1rem;
-}
-
-.ggd {
-    padding: 50px 10px;
-}
-
-.ggd p {
-    font-size: 0.9em;
-}
-
-.ggd li{
-    color: #0a0a0a;
-    font-size: 0.9em;
-}
-
-.ggd h2{
-    color: var(--l-green);
-    font-size: 2.6em;
-    font-family: 'Poppins', sans-serif;
-}
-
-.ggd img {
-    height: auto;
-    width: 100%;
-    max-width: 350px;
-}
-
-.ggd a {
-    font-size: 1em;
-}
-
-.carouselImg {
-    padding-top: 100px;
-    height: auto;
-    width: 100%;
-    max-width: 400px;
-}
-
-.carouselClass {
-    color: #FFFFFF;
-}
-
-.content {
-    font-weight: bold;
-    font-size: 1.05em;
-}
-
-#carouselReviews {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.carousel-item p{
-    color: #FFFFFF;
-}
-  
-.carousel-control-prev {
-    margin-left: -25px;
-    padding-right: 20px;
-}
-  
-.carousel-control-next {
-    margin-right: -25px;
-    padding-left: 20px;
-}
-
-.carousel-control-prev, .carousel-control-next {
-    width: 5%;
-    height: 100px;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.footer{
-    margin: 80px 30px 30px;
-}
-
-.footer, h5{
-    color: var(--l-green);
-    font-size: 100%;
-}
-
-.footer, a, p{
-    color: #0a0a0a;
-}
-
-.footer, p {
-    font-size: 95%;
-    line-height: 1.9;
-}
-
-.contact input{
-    margin-bottom: 20px;
-}
-
-.contact textarea {
-    margin-bottom: 20px;
-}
-
-#convenant {
-    color:var(--primary)
-}
-
-/* .footer, a {
-    font-size: 12.8px;
-} */
-
-.footerCol {
-    width: 50%;
-}
-
-/* -------PROCES-------- */
-
-.proces_boefjes {
-     width: 100%;
-}
-/* -------TARIEVEN------- */
-
-tr:nth-child(2n) {
-border-bottom: 0;
-background-color: #f1f1f1;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border:#f1f1f1 1px solid;
-    font-size: 14px;
-    margin-bottom: 1rem;
-}
-td {
-    font-family: 'Open Sans', sans-serif;
-    padding: 0.5rem 0.625rem 0.625rem;
-    }
 
 /*** Facility ***/
 .facility-item .facility-icon {
