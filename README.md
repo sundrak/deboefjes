@@ -5,6 +5,7 @@ https://github.com/microsoft/PowerToys/releases/download/v0.69.0/PowerToysUserSe
 
 origional website
 https://kcdeboefjes.nl/
+https://getbootstrap.com/docs/5.2/components/carousel/
 ---------------------
 css/style.css
 website specifiek
