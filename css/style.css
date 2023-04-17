@@ -138,7 +138,6 @@ h6,
 }
 .navbar .navbar-nav .nav-link {
     padding: 30px 15px;
-    /*MOD MOD MOD*/
     color: var(--light)!important;
     background-color: var(--l-green);
     font-weight: 500;
@@ -147,7 +146,6 @@ h6,
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    /*MOD MOD MOD*/
     color: var(--light)!important;
     background-color:var(--d-green)!important;
     
@@ -536,10 +534,6 @@ h6,
 #convenant {
     color:var(--primary)
 }
-
-/* .footer, a {
-    font-size: 12.8px;
-} */
 
 .footerCol {
     width: 50%;
